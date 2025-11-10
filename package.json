@@ -1,0 +1,15 @@
+{
+  "name": "imagetotext",
+  "version": "1.0.0",
+  "description": "Image to Text Converter using Tesseract.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["ocr", "image", "text", "tesseract"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

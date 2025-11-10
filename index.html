@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Image to Text Converter</h1>
+        <p class="subtitle">Upload an image to extract text</p>
+
+        <div class="upload-section">
+            <input type="file" id="imageInput" accept="image/*" />
+            <label for="imageInput" class="upload-btn">Choose Image</label>
+            <div id="fileName" class="file-name"></div>
+        </div>
+
+        <div id="imagePreview" class="image-preview"></div>
+
+        <button id="convertBtn" class="convert-btn" disabled>Convert to Text</button>
+
+        <div id="progressBar" class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+            <span id="progressText" class="progress-text"></span>
+        </div>
+
+        <div id="result" class="result-section">
+            <h2>Extracted Text:</h2>
+            <textarea id="outputText" readonly></textarea>
+            <button id="copyBtn" class="copy-btn">Copy Text</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
